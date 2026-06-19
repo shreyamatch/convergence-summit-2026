@@ -84,7 +84,7 @@ body.locked { overflow: hidden; }
   letter-spacing: -0.015em;
   line-height: 1;
   margin-bottom: 52px;
-  text-align: center;
+  text-align: left;
 }
 
 .section-tag {
