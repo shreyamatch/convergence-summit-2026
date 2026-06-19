@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convergence Summit 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ====== NAV ====== -->
+  <nav class="navbar">
+    <div class="nav-logos">
+      <a href="https://www.trio-us.org/" target="_blank" rel="noopener noreferrer" class="logo-link">
+        <img src="assets/trio-us-logo.png" alt="TRIO-US" class="logo-slot logo-img logo-img--invert">
+      </a>
+      <a href="https://pulsehealthsciences.com/" target="_blank" rel="noopener noreferrer" class="logo-link">
+        <img src="assets/pulse-logo.png" alt="iMi Pulse" class="logo-slot logo-img">
+      </a>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#details"     class="nav-link">Details</a>
+      <a href="#description" class="nav-link">Description</a>
+      <a href="#chaired-by"  class="nav-link">Chaired By</a>
+      <a href="#sponsors"    class="nav-link">Sponsors</a>
+      <a href="#agenda"      class="nav-link">Agenda</a>
+    </nav>
+    <div class="nav-right">
+      <button class="learn-more-btn" id="learnMoreBtn">Learn More</button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== MODAL ====== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modalBox">
+      <button class="modal-close" id="modalClose">&#x2715;</button>
+      <p class="modal-eyebrow">Convergence Summit &nbsp;·&nbsp; 2026</p>
+      <h2 class="modal-title">Register Your Interest</h2>
+      <p class="modal-subtitle">We'll be in touch with details as the summit approaches.</p>
+      <form class="modal-form" id="modalForm" onsubmit="handleFormSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Jane" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Doe" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="emailField">Email Address</label>
+          <input type="email" id="emailField" placeholder="jane@institution.edu" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Tell us about your interest in the summit…"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ====== HERO ====== -->
+  <section id="details">
+    <div class="hero-container">
+      <div class="hero-image-wrapper">
+        <div class="hero-bg"></div>
+        <div class="hero-grain"></div>
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <p class="hero-eyebrow">Santa Monica, CA &nbsp;·&nbsp; Sept. 16–19, 2026</p>
+            <h1 class="hero-title">
+              <span class="hero-title-line">Convergence</span>
+              <span class="hero-title-line">Summit</span>
+            </h1>
+            <p class="hero-subtitle">Advancing ADC &amp; Bi-Specific Medicines</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== DESCRIPTION ====== -->
+  <section id="description" class="description-section">
+    <div class="section-container">
+      <h2 class="section-heading">Description</h2>
+      <div class="description-layout">
+        <div class="description-label-col">
+          <span class="section-tag">About the Event</span>
+        </div>
+        <div class="description-text-col">
+          <p class="description-text">
+            The Convergence Summit is a focused, working scientific meeting designed for a national audience of clinicians, investigators, researchers, and industry partners engaged in the rapidly evolving fields of antibody-drug conjugates (ADCs) and bi-specific medicines. Over four days, participants from leading academic centers, community practices, and life science companies will review emerging clinical and translational data, discuss unmet needs in solid tumors and hematologic malignancies, and explore strategies to design, execute, and implement next-generation antibody-based trials and therapies in routine practice.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CHAIRED BY ====== -->
+  <section id="chaired-by" class="chaired-section">
+    <div class="section-container">
+      <h2 class="section-heading">Chaired By</h2>
+      <div class="chairs-grid">
+
+        <div class="chair-card" data-chair="1">
+          <div class="chair-image-placeholder">
+            <img src="assets/large-OBR24-0004A6_Bardia-3000x2000.jpg" alt="Aditya Bardia" class="chair-img">
+          </div>
+          <div class="chair-info">
+            <p class="chair-institution">UCLA Health</p>
+            <h3 class="chair-name">Aditya Bardia</h3>
+            <p class="chair-credentials">MD, MPH</p>
+            <p class="chair-title">Professor of Medicine &amp; Director of Translational Research Integration</p>
+          </div>
+          <span class="chair-arrow">&#8594;</span>
+        </div>
+
+        <div class="chair-card" data-chair="2">
+          <div class="chair-image-placeholder">
+            <img src="assets/Mark_Pegram_3_2_ratio.jpg" alt="Mark Pegram" class="chair-img">
+          </div>
+          <div class="chair-info">
+            <p class="chair-institution">Stanford Cancer Institute</p>
+            <h3 class="chair-name">Mark Pegram</h3>
+            <p class="chair-credentials">MD</p>
+            <p class="chair-title">Suzy Yuan-Huey Hung Endowed Professor of Medical Oncology &amp; Associate Director of Clinical Research</p>
+          </div>
+          <span class="chair-arrow">&#8594;</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="panel-overlay" id="panelOverlay"></div>
+
+    <!-- Chair Detail Panel — opens from RIGHT -->
+    <aside class="chair-panel" id="chairPanel">
+      <button class="panel-close" id="panelClose">&#x2715;</button>
+      <div class="panel-image-wrapper">
+        <img src="" alt="" class="panel-img" id="panelImage">
+      </div>
+      <div class="panel-bio">
+        <p class="panel-institution" id="panelInstitution"></p>
+        <h3 class="panel-name" id="panelName"></h3>
+        <p class="panel-credentials" id="panelCredentials"></p>
+        <div class="panel-rule"></div>
+        <p class="panel-role" id="panelRole"></p>
+        <p class="panel-description" id="panelDescription"></p>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ====== SPONSORS ====== -->
+  <section id="sponsors" class="sponsors-section">
+    <div class="section-container">
+      <h2 class="section-heading">Sponsors</h2>
+
+      <div class="sponsor-tier">
+        <div class="tier-header"><span class="tier-label platinum-label">Platinum</span></div>
+        <div class="sponsor-logos">
+          <div class="sponsor-logo-box platinum-box">LOGO</div>
+          <div class="sponsor-logo-box platinum-box">LOGO</div>
+          <div class="sponsor-logo-box platinum-box">LOGO</div>
+        </div>
+      </div>
+
+      <div class="tier-divider"></div>
+
+      <div class="sponsor-tier">
+        <div class="tier-header"><span class="tier-label gold-label">Gold</span></div>
+        <div class="sponsor-logos">
+          <div class="sponsor-logo-box gold-box">LOGO</div>
+          <div class="sponsor-logo-box gold-box">LOGO</div>
+          <div class="sponsor-logo-box gold-box">LOGO</div>
+          <div class="sponsor-logo-box gold-box">LOGO</div>
+          <div class="sponsor-logo-box gold-box">LOGO</div>
+        </div>
+      </div>
+
+      <div class="tier-divider"></div>
+
+      <div class="sponsor-tier">
+        <div class="tier-header"><span class="tier-label silver-label">Silver</span></div>
+        <div class="sponsor-logos">
+          <div class="sponsor-logo-box silver-box">LOGO</div>
+          <div class="sponsor-logo-box silver-box">LOGO</div>
+          <div class="sponsor-logo-box silver-box">LOGO</div>
+          <div class="sponsor-logo-box silver-box">LOGO</div>
+          <div class="sponsor-logo-box silver-box">LOGO</div>
+          <div class="sponsor-logo-box silver-box">LOGO</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== AGENDA ====== -->
+  <section id="agenda" class="agenda-section">
+    <div class="section-container">
+      <h2 class="section-heading">Agenda</h2>
+      <div class="agenda-layout">
+
+        <!-- Sticky Date -->
+        <div class="agenda-date-col">
+          <div class="sticky-date" id="stickyDate">
+            <span class="date-month" id="dateMonth">Sept</span>
+            <span class="date-number" id="dateNumber">16</span>
+            <span class="date-year">2026</span>
+          </div>
+        </div>
+
+        <!-- Events -->
+        <div class="agenda-events-col" id="agendaEvents">
+
+          <!-- ─── DAY 1 · Sept 16 ─── -->
+          <div class="agenda-card">
+            <div class="agenda-day" data-day-month="Sept" data-day-num="16">
+
+            <div class="agenda-event">
+              <span class="event-num">01</span>
+              <p class="event-name">Kickoff Mixer: Connecting with TRIO-US Leadership</p>
+              <span class="event-time">6:00 – 8:00 PM</span>
+              <span class="event-speaker">Calabra Lounge &amp; Terrace</span>
+            </div>
+
+</div><!-- /Day 1 -->
+          </div><!-- /card -->
+          <!-- ─── DAY 2 · Sept 17 ─── -->
+          <div class="agenda-card">
+            <div class="agenda-day" data-day-month="Sept" data-day-num="17">
+
+            <div class="agenda-event agenda-break-row">
+              <span class="break-label">Breakfast</span>
+              <span class="break-time">7:00 – 9:00 AM</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">01</span>
+              <p class="event-name">Welcome &amp; Introductions</p>
+              <span class="event-time">8:45 – 9:00 AM</span>
+              <span class="event-speaker">Aditya Bardia &amp; Mark Pegram</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">02</span>
+              <p class="event-name">Antibody-Drug Conjugates</p>
+              <span class="event-time">9:00 – 9:30 AM</span>
+              <span class="event-speaker">Dennis Slamon — UCLA</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">03</span>
+              <p class="event-name">Bispecific Antibodies</p>
+              <span class="event-time">9:30 – 10:00 AM</span>
+              <span class="event-speaker">Charles Rudin — MSKCC</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">04</span>
+              <p class="event-name">Radio-Ligand Therapies</p>
+              <span class="event-time">10:00 – 10:30 AM</span>
+              <span class="event-speaker">Oliver Sartor — Tulane University</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event agenda-break-row">
+              <span class="break-label">Refreshment Break</span>
+              <span class="break-time">10:30 – 11:00 AM</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">05</span>
+              <p class="event-name">Linker Chemistry Considerations</p>
+              <span class="event-time">11:00 – 11:30 AM</span>
+              <span class="event-speaker">Carolyn Bertozzi — Stanford</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">06</span>
+              <p class="event-name">Panel Discussion</p>
+              <span class="event-time">11:30 AM – 12:00 PM</span>
+              <span class="event-speaker"></span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event agenda-break-row">
+              <span class="break-label">Group Photo</span>
+              <span class="break-time">12:00 – 12:05 PM</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event agenda-break-row">
+              <span class="break-label">Lunch</span>
+              <span class="break-time">12:00 – 1:00 PM</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">07</span>
+              <p class="event-name">HER2 as Therapeutic Target</p>
+              <span class="event-time">1:00 – 1:30 PM</span>
+              <span class="event-speaker">Shanu Modi — MSKCC</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">08</span>
+              <p class="event-name">TROP2 as Therapeutic Target</p>
+              <span class="event-time">1:30 – 2:00 PM</span>
+              <span class="event-speaker">Sata Tolaney — DFCI</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">09</span>
+              <p class="event-name">Nectin-4 as Therapeutic Target</p>
+              <span class="event-time">2:00 – 2:30 PM</span>
+              <span class="event-speaker">Daniel P. Petrylak — Yale</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event agenda-break-row">
+              <span class="break-label">Refreshment Break</span>
+              <span class="break-time">2:30 – 3:00 PM</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">10</span>
+              <p class="event-name">Folate Receptor as Therapeutic Target</p>
+              <span class="event-time">3:00 – 3:30 PM</span>
+              <span class="event-speaker">Kathleen N. Moore — University of Oklahoma</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">11</span>
+              <p class="event-name">B7-H3 as Therapeutic Target</p>
+              <span class="event-time">3:30 – 4:00 PM</span>
+              <span class="event-speaker">Skip Burris — Sarah Cannon</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">12</span>
+              <p class="event-name">DLL3 as Therapeutic Target</p>
+              <span class="event-time">4:00 – 4:30 PM</span>
+              <span class="event-speaker">Jonathan Goldman — UCLA</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">13</span>
+              <p class="event-name">Panel Discussion</p>
+              <span class="event-time">4:30 – 5:00 PM</span>
+              <span class="event-speaker"></span>
+            </div>
+
+</div><!-- /Day 2 -->
+          </div><!-- /card -->
+          <!-- ─── DAY 3 · Sept 18 ─── -->
+          <div class="agenda-card">
+            <div class="agenda-day" data-day-month="Sept" data-day-num="18">
+
+            <div class="agenda-event agenda-break-row">
+              <span class="break-label">Breakfast</span>
+              <span class="break-time">7:00 – 9:00 AM</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">01</span>
+              <p class="event-name">Current and Emerging Therapies in Breast Cancer</p>
+              <span class="event-time">9:00 – 9:30 AM</span>
+              <span class="event-speaker">Sara Hurvitz — Fred Hutch</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">02</span>
+              <p class="event-name">Current and Emerging Therapies in Lung Cancer</p>
+              <span class="event-time">9:30 – 10:00 AM</span>
+              <span class="event-speaker">Taofeek K. Owonikoko — University of Maryland</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">03</span>
+              <p class="event-name">Current and Emerging Therapies in Bladder Cancer</p>
+              <span class="event-time">10:00 – 10:30 AM</span>
+              <span class="event-speaker">Alexandra Drakaki — UCLA</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event agenda-break-row">
+              <span class="break-label">Refreshment Break</span>
+              <span class="break-time">10:30 – 11:00 AM</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">04</span>
+              <p class="event-name">Current and Emerging Therapies in Prostate Cancer</p>
+              <span class="event-time">11:00 – 11:30 AM</span>
+              <span class="event-speaker">Toni Choueiri — DFCI</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">05</span>
+              <p class="event-name">Current and Emerging Therapies in Gyn Cancers</p>
+              <span class="event-time">11:30 AM – 12:00 PM</span>
+              <span class="event-speaker">Yeku Oladapo — MGB</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">06</span>
+              <p class="event-name">Panel Discussion</p>
+              <span class="event-time">12:00 – 12:30 PM</span>
+              <span class="event-speaker"></span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event agenda-break-row">
+              <span class="break-label">Lunch</span>
+              <span class="break-time">12:30 – 1:30 PM</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">07</span>
+              <p class="event-name">Current and Emerging Therapies in Lymphoma</p>
+              <span class="event-time">1:30 – 2:00 PM</span>
+              <span class="event-speaker">Sarah Larson — UCLA</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">08</span>
+              <p class="event-name">Current and Emerging Therapies in MDS and Leukemia</p>
+              <span class="event-time">2:00 – 2:30 PM</span>
+              <span class="event-speaker">Amy Dezern — Johns Hopkins</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">09</span>
+              <p class="event-name">Current and Emerging Therapies in Multiple Myeloma</p>
+              <span class="event-time">2:30 – 3:00 PM</span>
+              <span class="event-speaker">Noopur Raje — MGB</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event agenda-break-row">
+              <span class="break-label">Refreshment Break</span>
+              <span class="break-time">3:00 – 3:30 PM</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">10</span>
+              <p class="event-name">TBD</p>
+              <span class="event-time">3:30 – 4:00 PM</span>
+              <span class="event-speaker"></span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">11</span>
+              <p class="event-name">Therapeutic Resistance</p>
+              <span class="event-time">4:00 – 4:30 PM</span>
+              <span class="event-speaker">Sarat Chandralapathy — MSKCC</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">12</span>
+              <p class="event-name">Panel Discussion</p>
+              <span class="event-time">4:30 – 5:00 PM</span>
+              <span class="event-speaker"></span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event agenda-break-row">
+              <span class="break-label">Dinner</span>
+              <span class="break-time">5:30 – 7:30 PM</span>
+            </div>
+
+</div><!-- /Day 3 -->
+          </div><!-- /card -->
+          <!-- ─── DAY 4 · Sept 19 ─── -->
+          <div class="agenda-card">
+            <div class="agenda-day" data-day-month="Sept" data-day-num="19">
+
+            <div class="agenda-event agenda-break-row">
+              <span class="break-label">Breakfast</span>
+              <span class="break-time">7:00 – 9:00 AM</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">01</span>
+              <p class="event-name">Claudin Family as Therapeutic Target</p>
+              <span class="event-time">9:00 – 9:30 AM</span>
+              <span class="event-speaker">Alex Adjei — Cleveland Clinic</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">02</span>
+              <p class="event-name">Cadherin Family as Therapeutic Target</p>
+              <span class="event-time">9:30 – 10:00 AM</span>
+              <span class="event-speaker">Funda Meric-Bernstam — MD Anderson</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">03</span>
+              <p class="event-name">Novel Therapeutic Targets</p>
+              <span class="event-time">10:00 – 10:30 AM</span>
+              <span class="event-speaker">Lilian Su — Princess Margaret</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event agenda-break-row">
+              <span class="break-label">Refreshment Break &amp; Room Check-Out</span>
+              <span class="break-time">10:30 – 11:00 AM</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">04</span>
+              <p class="event-name">Translational Model for Target Discovery</p>
+              <span class="event-time">11:00 – 11:30 AM</span>
+              <span class="event-speaker">Dennis Slamon — UCLA</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">05</span>
+              <p class="event-name">Panel Discussion</p>
+              <span class="event-time">11:30 AM – 12:00 PM</span>
+              <span class="event-speaker"></span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event">
+              <span class="event-num">06</span>
+              <p class="event-name">Summary and Wrap-Up</p>
+              <span class="event-time">12:00 – 12:30 PM</span>
+              <span class="event-speaker">Aditya Bardia, UCLA &amp; Mark Pegram, Stanford</span>
+            </div>
+            <div class="event-divider"></div>
+
+            <div class="agenda-event agenda-break-row">
+              <span class="break-label">Lunch for All Attendees</span>
+              <span class="break-time">12:00 – 2:00 PM</span>
+            </div>
+
+</div><!-- /Day 4 -->
+          </div><!-- /card -->
+
+        </div><!-- /events col -->
+      </div><!-- /agenda layout -->
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="section-container">
+      <div class="footer-inner">
+        <div class="footer-logos">
+          <a href="https://www.trio-us.org/" target="_blank" rel="noopener noreferrer" class="logo-link">
+            <img src="assets/trio-us-logo.png" alt="TRIO-US" class="logo-slot logo-img logo-img--invert">
+          </a>
+          <a href="https://pulsehealthsciences.com/" target="_blank" rel="noopener noreferrer" class="logo-link">
+            <img src="assets/pulse-logo.png" alt="iMi Pulse" class="logo-slot logo-img">
+          </a>
+        </div>
+        <div class="footer-center">
+          <p class="footer-title">Convergence Summit</p>
+          <p class="footer-sub">Santa Monica, CA &nbsp;·&nbsp; Sept. 16–19, 2026</p>
+        </div>
+        <p class="footer-copy">© 2026 Convergence Summit</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
