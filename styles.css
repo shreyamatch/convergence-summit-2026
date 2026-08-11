@@ -888,6 +888,17 @@ body.locked { overflow: hidden; }
   text-align: left;
 }
 
+.agenda-disclaimer--day {
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.agenda-disclaimer--nav {
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 /* Thin divider between events */
 .event-divider {
   height: 1px;
@@ -973,7 +984,6 @@ body.locked { overflow: hidden; }
   display: block;
 }
 
-.faculty-photo img[alt="Jonathan Goldman"]  { object-position: 37% center; }
 .faculty-photo img[alt="Alexandra Drakaki"] { object-position: 60% center; }
 .faculty-photo img[alt="Dennis Slamon"]     { object-position: 0% center; }
 
