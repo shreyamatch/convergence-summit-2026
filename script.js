@@ -17,7 +17,10 @@ function closeModal() {
   document.body.classList.remove('locked');
 }
 
-learnMoreBtn.addEventListener('click', openModal);
+learnMoreBtn.addEventListener('click', () => {
+  const parts = ['am', 'trio-us.org'];
+  window.location.href = `mailto:${parts[0]}@${parts[1]}?subject=Convergence%20Summit%202026%20%E2%80%94%20Learn%20More`;
+});
 modalClose.addEventListener('click', closeModal);
 modalOverlay.addEventListener('click', (e) => {
   if (!modalBox.contains(e.target)) closeModal();
