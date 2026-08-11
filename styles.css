@@ -880,6 +880,14 @@ body.locked { overflow: hidden; }
   text-align: left;
 }
 
+.agenda-disclaimer {
+  font-family: var(--font);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--muted);
+  text-align: left;
+}
+
 /* Thin divider between events */
 .event-divider {
   height: 1px;
