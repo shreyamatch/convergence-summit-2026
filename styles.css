@@ -1183,13 +1183,13 @@ body.locked { overflow: hidden; }
   .chairs-grid     { grid-template-columns: 1fr; gap: 12px; }
   .chair-panel     { width: 100%; }
 
-  /* Sponsors */
+  /* Sponsors — stack tiers full-width on phone */
   .sponsors-section { padding: 64px 0; }
-  .sponsors-grid    { grid-template-columns: repeat(3, 1fr); }
+  .sponsors-grid    { grid-template-columns: 1fr; }
 
-  /* Faculty */
+  /* Faculty — 2 per row instead of 3 for more breathing room on phone */
   .faculty-section { padding: 64px 0; }
-  .faculty-grid    { grid-template-columns: repeat(3, 1fr); }
+  .faculty-grid    { grid-template-columns: repeat(2, 1fr); }
 
   /* Agenda */
   .agenda-section { padding: 64px 0 80px; }
@@ -1250,6 +1250,6 @@ body.locked { overflow: hidden; }
 
   .agenda-event { gap: 0 24px; }
   .faculty-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-  .sponsors-grid { grid-template-columns: repeat(2, 1fr); }
+  .sponsors-grid { grid-template-columns: 1fr; }
   .sponsor-col { padding: 20px 16px 16px; }
 }
