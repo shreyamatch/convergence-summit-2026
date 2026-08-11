@@ -889,14 +889,7 @@ body.locked { overflow: hidden; }
 }
 
 .agenda-disclaimer--day {
-  margin-top: 16px;
-  margin-bottom: 4px;
-}
-
-.agenda-disclaimer--nav {
-  margin-top: 16px;
-  font-size: 12px;
-  line-height: 1.5;
+  margin-top: 4px;
 }
 
 /* Thin divider between events */
