@@ -1179,7 +1179,7 @@ body.locked { overflow: hidden; }
   .hero-title-line { font-size: clamp(36px, 9vw, 60px); }
 
   /* Sections */
-  .section-container { padding: 0 var(--pad-x); }
+  .section-container { padding: 0 60px; }
   .section-heading { font-size: 36px; margin-bottom: 32px; }
 
   /* Description */
@@ -1270,7 +1270,7 @@ body.locked { overflow: hidden; }
   .hero-overlay       { padding: 20px 24px; }
   .hero-title-line    { font-size: clamp(40px, 13vw, 58px); }
   .hero-subtitle      { font-size: 14px; }
-  .section-container  { padding: 0 var(--pad-x); }
+  .section-container  { padding: 0 44px; }
 
   .section-heading { font-size: 30px; }
   .description-lead { font-size: 18px; }
