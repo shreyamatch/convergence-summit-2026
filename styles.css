@@ -977,8 +977,6 @@ body.locked { overflow: hidden; }
   display: block;
 }
 
-.faculty-photo img[alt="Alexandra Drakaki"] { object-position: 60% center; }
-.faculty-photo img[alt="Dennis Slamon"]     { object-position: 0% center; }
 
 .faculty-info {
   padding: 16px 4px 20px;
@@ -1178,9 +1176,10 @@ body.locked { overflow: hidden; }
     border-radius: 12px;
   }
   .hero-overlay { padding: 28px 32px; }
+  .hero-title-line { font-size: clamp(36px, 9vw, 60px); }
 
   /* Sections */
-  .section-container { padding: 0 60px; }
+  .section-container { padding: 0 var(--pad-x); }
   .section-heading { font-size: 36px; margin-bottom: 32px; }
 
   /* Description */
@@ -1198,9 +1197,26 @@ body.locked { overflow: hidden; }
   .sponsors-section { padding: 64px 0; }
   .sponsors-grid    { grid-template-columns: 1fr; }
 
-  /* Faculty — 2 per row instead of 3 for more breathing room on phone */
+  /* Faculty — horizontal cards (photo left, info right) for legibility on phone */
   .faculty-section { padding: 64px 0; }
-  .faculty-grid    { grid-template-columns: repeat(2, 1fr); }
+  .faculty-grid    { grid-template-columns: 1fr; gap: 18px; }
+  .faculty-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+  }
+  .faculty-photo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .faculty-info { padding: 2px 0 0; }
+  .faculty-institution { font-size: 11px; margin-bottom: 6px; }
+  .faculty-name { font-size: 16px; margin-bottom: 4px; }
+  .faculty-credentials { font-size: 13px; margin-bottom: 6px; }
+  .faculty-role { font-size: 13px; line-height: 1.4; }
 
   /* Agenda */
   .agenda-section { padding: 64px 0 80px; }
@@ -1254,13 +1270,14 @@ body.locked { overflow: hidden; }
   .hero-overlay       { padding: 20px 24px; }
   .hero-title-line    { font-size: clamp(40px, 13vw, 58px); }
   .hero-subtitle      { font-size: 14px; }
-  .section-container  { padding: 0 44px; }
+  .section-container  { padding: 0 var(--pad-x); }
 
   .section-heading { font-size: 30px; }
   .description-lead { font-size: 18px; }
 
   .agenda-event { gap: 0 24px; }
-  .faculty-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .faculty-card { padding: 14px; gap: 14px; }
+  .faculty-photo { width: 64px; height: 64px; }
   .sponsors-grid { grid-template-columns: 1fr; }
   .sponsor-col { padding: 20px 16px 16px; }
 }
