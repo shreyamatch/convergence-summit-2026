@@ -908,7 +908,7 @@ body.locked { overflow: hidden; }
 }
 
 .chair-card.expanded .chair-expand-content {
-  max-height: 600px;
+  max-height: 2400px;
   opacity: 1;
 }
 
@@ -1176,7 +1176,7 @@ body.locked { overflow: hidden; }
     border-radius: 12px;
   }
   .hero-overlay { padding: 28px 32px; }
-  .hero-title-line { font-size: clamp(36px, 9vw, 60px); }
+  .hero-title-line { font-size: clamp(32px, 8vw, 52px); }
 
   /* Sections */
   .section-container { padding: 0 60px; }
@@ -1190,7 +1190,7 @@ body.locked { overflow: hidden; }
 
   /* Chairs */
   .chaired-section { padding: 64px 0; }
-  .chairs-grid     { grid-template-columns: 1fr; gap: 12px; }
+  .chairs-grid     { grid-template-columns: 1fr; gap: 18px; }
   .chair-panel     { width: 100%; }
 
   /* Sponsors — stack tiers full-width on phone */
@@ -1209,7 +1209,7 @@ body.locked { overflow: hidden; }
   .faculty-photo {
     width: 72px;
     height: 72px;
-    border-radius: 50%;
+    border-radius: 6px;
     flex-shrink: 0;
   }
   .faculty-info { padding: 2px 0 0; }
@@ -1268,7 +1268,7 @@ body.locked { overflow: hidden; }
 
   .hero-image-wrapper { height: 100vw; min-height: 460px; border-radius: 12px; }
   .hero-overlay       { padding: 20px 24px; }
-  .hero-title-line    { font-size: clamp(40px, 13vw, 58px); }
+  .hero-title-line    { font-size: clamp(32px, 11vw, 48px); }
   .hero-subtitle      { font-size: 14px; }
   .section-container  { padding: 0 44px; }
 
