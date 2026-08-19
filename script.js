@@ -3,7 +3,8 @@
 ================================================ */
 
 // ── Modal ──────────────────────────────────────
-const learnMoreBtn = document.getElementById('learnMoreBtn');
+const learnMoreBtn       = document.getElementById('learnMoreBtn');
+const learnMoreBtnMobile = document.getElementById('learnMoreBtnMobile');
 const modalOverlay = document.getElementById('modalOverlay');
 const modalBox     = document.getElementById('modalBox');
 const modalClose   = document.getElementById('modalClose');
@@ -17,9 +18,16 @@ function closeModal() {
   document.body.classList.remove('locked');
 }
 
-learnMoreBtn.addEventListener('click', () => {
+function openLearnMoreMailto() {
   const parts = ['am', 'trio-us.org'];
   window.location.href = `mailto:${parts[0]}@${parts[1]}?subject=Convergence%20Summit%202026%20%E2%80%94%20Learn%20More`;
+}
+learnMoreBtn.addEventListener('click', openLearnMoreMailto);
+learnMoreBtnMobile.addEventListener('click', () => {
+  openLearnMoreMailto();
+  navLinks.classList.remove('open');
+  navHamburger.classList.remove('open');
+  document.body.classList.remove('locked');
 });
 modalClose.addEventListener('click', closeModal);
 modalOverlay.addEventListener('click', (e) => {

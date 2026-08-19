@@ -193,6 +193,8 @@ body.locked { overflow: hidden; }
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
+.nav-mobile-cta { display: none; }
+
 /* =============================================
    MODAL
 ============================================= */
@@ -1168,6 +1170,11 @@ body.locked { overflow: hidden; }
 
   .learn-more-btn { display: none; }
   .nav-hamburger  { display: flex; }
+
+  .nav-mobile-cta {
+    display: inline-flex;
+    margin: 12px var(--pad-x) 0;
+  }
 
   /* Hero */
   .hero-container { padding: 12px var(--pad-x) 0; }
