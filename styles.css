@@ -711,7 +711,7 @@ body.locked { overflow: hidden; }
 }
 
 .sponsor-logo-item {
-  height: 124px;
+  height: 109px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -741,6 +741,7 @@ body.locked { overflow: hidden; }
 .logo-abbvie      { max-height: 132px; }
 .logo-abbvie-bronze { transform: translateY(-30px); }
 .logo-daiichi-sankyo { max-height: 120px; }
+.logo-nuvalent    { max-height: 132px; transform: translateY(-40px); }
 
 /* =============================================
    AGENDA
